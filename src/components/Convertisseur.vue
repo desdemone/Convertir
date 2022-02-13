@@ -9,7 +9,7 @@
       <option value="grammes">Grammes</option>
       <option value="mmol">Mmol</option>
     </select>
-  <!--Bouton conversion-->
+    <!--Bouton conversion-->
     <button v-on:click="calcul">Conversion</button>
   </div>
   <!--Zone input-->
@@ -20,6 +20,7 @@
   </div>
   <!--Zone résultat-->
   <p class="result"><strong> Résultat :</strong> {{ result }}</p>
+  <p>test commit</p>
 </template>
 
 <script>
