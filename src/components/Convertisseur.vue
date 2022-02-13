@@ -41,7 +41,7 @@ export default {
       } else if (this.choix === "mmol") {
         this.result = this.glycemie * 0.18 + " grammes";
       }
-      return this.result.toFixed(2);
+      return Math.round(this.result).toFixed(2);
     },
   },
 };
