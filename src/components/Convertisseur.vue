@@ -20,7 +20,6 @@
   </div>
   <!--Zone résultat-->
   <p class="result"><strong> Résultat :</strong> {{ result }}</p>
-  <p>test commit</p>
 </template>
 
 <script>
