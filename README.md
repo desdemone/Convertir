@@ -1,5 +1,5 @@
 # convertisseur
-
+Création d'un convertisseur pour glycémies : passe des grammes aux mmol et vice et versa . L'objectif est de faire un petit projet en vueJS !
 ## Project setup
 ```
 npm install
