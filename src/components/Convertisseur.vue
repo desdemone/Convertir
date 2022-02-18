@@ -67,7 +67,7 @@ h1 {
   font-size: 60px;
 }
 @media only screen and(
-  max-width:600px) {
+  max-width:400px) {
   h1 {
     font-size: 20px;
   }
