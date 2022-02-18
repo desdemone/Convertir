@@ -66,4 +66,10 @@ h1 {
   font-style: italic;
   font-size: 60px;
 }
+@media only screen and(
+  max-width:600px) {
+  h1 {
+    font-size: 20px;
+  }
+}
 </style>
