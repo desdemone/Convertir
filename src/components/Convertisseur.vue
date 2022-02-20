@@ -2,7 +2,7 @@
   <!--Image de fond -->
   <div :style="{ 'background-image': 'url(./assets/photo.jpg)' }"></div>
   <!--Titre-->
-  <h1>Conversion g/l => mmol/l</h1>
+  <h1>g/l => mmol/l</h1>
 
   <!--Zone input-->
   <fieldset class="saisie">
@@ -55,10 +55,10 @@ export default {
 <style scoped>
 h1 {
   margin-bottom: 100px;
-  margin-left: 20px;
+  margin-left: 100px;
   text-align: center;
   font-style: italic;
-  font-size: 60px;
+  font-size: 3em;
 }
 .saisie {
   width: 600px;
@@ -78,11 +78,5 @@ input {
 .menu {
   margin-top: -300px;
   margin-right: 20px;
-}
-@media only screen and(
-  max-width:400px) {
-  h1 {
-    font-size: 20px;
-  }
 }
 </style>
