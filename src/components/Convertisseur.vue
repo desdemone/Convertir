@@ -3,29 +3,30 @@
   <div :style="{ 'background-image': 'url(./assets/photo.jpg)' }"></div>
   <!--Titre-->
   <h1>g/l => mmol/l</h1>
+  <div class="container">
+    <!--Zone input-->
+    <fieldset class="saisie">
+      <legend>Veuillez saisir la glycémie</legend>
+      <input placeholder="saisie" v-model="glycemie" />
 
-  <!--Zone input-->
-  <fieldset class="saisie">
-    <legend>Veuillez saisir la glycémie</legend>
-    <input placeholder="saisie" v-model="glycemie" />
+      <!--Menu déroulant-->
 
-    <!--Menu déroulant-->
+      <select class="menu" v-model="choix">
+        <option value="grammes">Grammes</option>
+        <option value="mmol">Mmol</option>
+      </select>
 
-    <select class="menu" v-model="choix">
-      <option value="grammes">Grammes</option>
-      <option value="mmol">Mmol</option>
-    </select>
+      <!--Bouton conversion-->
 
-    <!--Bouton conversion-->
+      <button v-on:click="calcul">Conversion</button>
+    </fieldset>
 
-    <button v-on:click="calcul">Conversion</button>
-  </fieldset>
-
-  <!--Zone résultat-->
-  <fieldset class="result">
-    {{ result }}
-    <legend>Votre résultat</legend>
-  </fieldset>
+    <!--Zone résultat-->
+    <fieldset class="result">
+      {{ result }}
+      <legend>Votre résultat</legend>
+    </fieldset>
+  </div>
 </template>
 
 <script>
